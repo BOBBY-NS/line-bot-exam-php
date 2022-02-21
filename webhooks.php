@@ -22,8 +22,18 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => '\uDBC0\uDC84 LINE original emoji'
+				'type' => 'template',
+				"altText": "This is a buttons template",
+				'template' => [
+					"type" => "buttons",
+					 "title" => "Menu",
+					"text" => "Please select",
+				     	 "defaultAction" => [
+					  "type"=> "uri",
+					  "label"=> "View detail",
+					  "uri"=>"http://example.com/page/123"
+				      ]
+				]
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
