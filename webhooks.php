@@ -23,15 +23,16 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'template',
-				"altText": "This is a buttons template",
+				"altText" => "This is a buttons template",
 				'template' => [
 					"type" => "buttons",
 					 "title" => "Menu",
 					"text" => "Please select",
 				     	 "defaultAction" => [
-					  "type"=> "uri",
-					  "label"=> "View detail",
-					  "uri"=>"http://example.com/page/123"
+					  	"type"=> "uri",
+					  	"label"=> "View detail",
+					  	"uri"=>"http://example.com/page/123"
+					]
 				]
 			];
 
