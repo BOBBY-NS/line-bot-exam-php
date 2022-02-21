@@ -22,39 +22,25 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				 "type"=> "template",
-				  "altText"=> "This is a buttons template",
-				  "template"=> [
-				      "type"=> "buttons",
-				      "thumbnailImageUrl"=> "https://bobbyns.com/dashboard/assets/img/logo-xl.png",
-				      "imageAspectRatio"=> "rectangle",
-				      "imageSize"=> "cover",
-				      "imageBackgroundColor"=> "#FFFFFF",
-				      "title"=> "Menu",
-				      "text"=> "Please select",
-				      "defaultAction"=> [
-					  "type"=> "uri",
-					  "label"=> "View detail",
-					  "uri"=> "http=>//example.com/page/123"
-				      ],
-				      "actions"=> [
-					  [
-					    "type"=> "postback",
-					    "label"=> "Buy",
-					    "data"=> "action=buy&itemid=123"
-					  ],
-					  [
-					    "type"=> "postback",
-					    "label"=> "Add to cart",
-					    "data"=> "action=add&itemid=123"
-					  ],
-					  [
-					    "type"=> "uri",
-					    "label"=> "View detail",
-					    "uri"=> "http=>//example.com/page/123"
-					  ]
-				      ]
-				  ]
+				'type'=> 'flex',
+				'altText'=> 'This is a Flex Message',
+				'contents'=> [
+				 	'type'=> 'bubble',
+				 	'body'=> [
+						'type'=> 'box',
+						'layout'=> 'vertical',
+						'contents'=> [
+							'type'=> 'button',
+							'style'=> 'primary',
+							'height'=> 'sm',
+							'action'=> [
+								'type'=> 'uri',
+								'label'=> 'Add to Cart',
+								'uri'=> 'https://developers.line.me'
+							]
+						]
+					]
+				]
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
