@@ -22,9 +22,8 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'uri',
-				'label' => '55',
-   				'uri' => $text
+				'type' => 'text',
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
