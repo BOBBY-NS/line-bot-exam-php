@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 				  "altText"=> "This is a buttons template",
 				  "template"=> [
 				      "type"=> "buttons",
-				      "thumbnailImageUrl"=> "https=>//example.com/bot/images/image.jpg",
+				      "thumbnailImageUrl"=> "https://bobbyns.com/dashboard/assets/img/logo-xl.png",
 				      "imageAspectRatio"=> "rectangle",
 				      "imageSize"=> "cover",
 				      "imageBackgroundColor"=> "#FFFFFF",
