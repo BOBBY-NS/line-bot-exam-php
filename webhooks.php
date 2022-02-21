@@ -32,7 +32,6 @@ if (!is_null($events['events'])) {
 					  "type"=> "uri",
 					  "label"=> "View detail",
 					  "uri"=>"http://example.com/page/123"
-				      ]
 				]
 			];
 
