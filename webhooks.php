@@ -21,27 +21,42 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [[
-				'type'=> 'flex',
-				'altText'=> 'This is a Flex Message',
-				'contents'=> [
-				 	'type'=> 'bubble',
-				 	'body'=> [
-						'type'=> 'box',
-						'layout'=> 'vertical',
-						'contents'=> [
-							'type'=> 'button',
-							'style'=> 'primary',
-							'height'=> 'sm',
-							'action'=> [
-								'type'=> 'uri',
-								'label'=> 'Add to Cart',
-								'uri'=> 'https://developers.line.me'
-							]
-						]
-					]
-				]
-			]];
+			$messages = 	array(
+				   'type' => 'imagemap',
+				   'baseUrl' => 'https://px.investorz.com/LINEBot/img/test.jpg',
+				   'altText' => 'this is an imagemap',
+				   'baseSize' => 
+				 array(
+				     'height' => 240,
+				     'width' => 240,
+				  ),
+				   'actions' => 
+				  array (
+				    0 => 
+				    array(
+				       'type' => 'uri',
+				       'linkUri' => 'https://example.com/',
+				       'area' => 
+				      array(
+					 'x' => 0,
+					 'y' => 0,
+					 'width' => 520,
+					 'height' => 1040,
+				      ),
+				    ),   
+				    array(
+				       'type' => 'message',
+				       'text' => 'hello',
+				       'area' => 
+				     array(
+					 'x' => 520,
+					 'y' => 0,
+					 'width' => 520,
+					 'height' => 1040,
+				      )
+				    )
+				  )
+				);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
