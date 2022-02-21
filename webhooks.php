@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'uri',
 				'label':'https://bobbyns.com/dashboard/assets/img/logo-xl.png',
-   				'linkUri': $text,
+   				'linkUri': $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
