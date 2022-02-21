@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'uri',
 				'label' => 'Menu',
-				'uri' => $text
+				'uri' => 'https://www.youtube.com/'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
