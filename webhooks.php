@@ -25,11 +25,6 @@ if (!is_null($events['events'])) {
 				   'type' => 'imagemap',
 				   'baseUrl' => 'https://bobbyns.com/dashboard/assets/img/logo-xl.png#',
 				   'altText' => 'this is an imagemap',
-				   'baseSize' => 
-				 array(
-				     'height' => 240,
-				     'width' => 240,
-				  ),
 				   'actions' => 
 				  array (
 				    0 => 
