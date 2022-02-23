@@ -27,10 +27,10 @@ if (!is_null($events['events'])) {
 				   'altText' => 'this is an imagemap',
 				   'baseSize' => 
 				 array(
-				     'height' => 240,
-				     'width' => 240,
+				     'width' => 1040,
+				     'height' => 1040,
 				  ),
-				   'actions' => 
+				  'actions' => 
 				  array (
 				    0 => 
 				    array(
@@ -39,9 +39,9 @@ if (!is_null($events['events'])) {
 				       'area' => 
 				      array(
 					 'x' => 0,
-					 'y' => 0,
+					 'y' => 586,
 					 'width' => 520,
-					 'height' => 1040,
+					 'height' => 454,
 				      ),
 				    ),   
 				    array(
@@ -50,9 +50,9 @@ if (!is_null($events['events'])) {
 				       'area' => 
 				     array(
 					 'x' => 520,
-					 'y' => 0,
+					 'y' => 586,
 					 'width' => 520,
-					 'height' => 1040,
+					 'height' => 454,
 				      )
 				    )
 				  )
