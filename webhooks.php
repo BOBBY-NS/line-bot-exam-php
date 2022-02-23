@@ -63,7 +63,7 @@ if (!is_null($events['events'])) {
                         'contents' => [
                             0 => [
                                 'type' => 'text',
-                                'text' => 'BOBBY Nakhon Sawan',
+                                'text' => 'BOBBY (DC Nakhon Sawan)',
                                 'align' => 'center',
                                 'size' => 'xs',
                                 'color' => '#6c757d'
