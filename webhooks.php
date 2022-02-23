@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 					    'type': 'box',
 					    'layout': 'vertical',
 					    'spacing': 'md',
-					    'contents': [
+					    'contents': array(
 					      array(
 						'type': 'button',
 						'style': 'primary',
@@ -35,8 +35,8 @@ if (!is_null($events['events'])) {
 						  'type': 'uri',
 						  'label': 'Primary style button',
 						  'uri': 'https://developers.line.me'
-						}
-					      },
+						)
+					      ),
 					      array(
 						'type': 'button',
 						'style': 'secondary',
@@ -44,8 +44,8 @@ if (!is_null($events['events'])) {
 						  'type': 'uri',
 						  'label': 'Secondary style button',
 						  'uri': 'https://developers.line.me'
-						}
-					      },
+						)
+					      ),
 					      array(
 						'type': 'button',
 						'style': 'link',
@@ -53,11 +53,11 @@ if (!is_null($events['events'])) {
 						  'type': 'uri',
 						  'label': 'Link style button',
 						  'uri': 'https://developers.line.me'
-						}
-					      }
-					    ]
-					  }
-					};
+						)
+					      )
+					    )
+					  )
+					);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
