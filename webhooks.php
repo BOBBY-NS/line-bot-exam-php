@@ -21,44 +21,43 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = array(
-			    'type' => 'bubble',
-			    'body' => array(
-				'type' => 'box',
-				'layout' => 'vertical',
-				'spacing' => 'md',
-				'contents' =>  array(
-				    0 =>
-				    array(
+			$messages = [
+				  'type' => 'bubble',
+				  'body' => [
+				    'type' => 'box',
+				    'layout' => 'vertical',
+				    'spacing' => 'md',
+				    'contents' => [
+				      0 => [
 					'type' => 'button',
 					'style' => 'primary',
-					'action' => array(
-					    'type' => 'uri',
-					    'label' => 'Primary style button',
-					    'uri' => 'https://developers.line.me'
-					)
-				    ),
-				    array(
+					'action' => [
+					  'type' => 'uri',
+					  'label' => 'Primary style button',
+					  'uri' => 'https://developers.line.me',
+					],
+				      ],
+				      1 => [
 					'type' => 'button',
 					'style' => 'secondary',
-					'action' => array(
-					    'type' => 'uri',
-					    'label' => 'Secondary style button',
-					    'uri' => 'https://developers.line.me'
-					)
-				    ),
-				    array(
+					'action' => [
+					  'type' => 'uri',
+					  'label' => 'Secondary style button',
+					  'uri' => 'https://developers.line.me',
+					],
+				      ],
+				      2 => [
 					'type' => 'button',
 					'style' => 'link',
-					'action' => array(
-					    'type' => 'uri',
-					    'label' => 'Link style button',
-					    'uri' => 'https://developers.line.me'
-					)
-				    )
-				)
-			    )
-			);
+					'action' => [
+					  'type' => 'uri',
+					  'label' => 'Link style button',
+					  'uri' => 'https://developers.line.me',
+					],
+				      ],
+				    ],
+				  ],
+				];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
