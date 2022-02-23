@@ -22,42 +22,15 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				  'type' => 'bubble',
-				  'body' => [
-				    'type' => 'box',
-				    'layout' => 'vertical',
-				    'spacing' => 'md',
-				    'contents' => [
-				      0 => [
-					'type' => 'button',
-					'style' => 'primary',
-					'action' => [
-					  'type' => 'uri',
-					  'label' => 'Primary style button',
-					  'uri' => 'https://developers.line.me',
-					],
-				      ],
-				      1 => [
-					'type' => 'button',
-					'style' => 'secondary',
-					'action' => [
-					  'type' => 'uri',
-					  'label' => 'Secondary style button',
-					  'uri' => 'https://developers.line.me',
-					],
-				      ],
-				      2 => [
-					'type' => 'button',
-					'style' => 'link',
-					'action' => [
-					  'type' => 'uri',
-					  'label' => 'Link style button',
-					  'uri' => 'https://developers.line.me',
-					],
-				      ],
-				    ],
-				  ],
-				];
+  'type' => 'button',
+  'action' => [
+    'type' => 'uri',
+    'label' => 'Tap me',
+    'uri' => 'https://github.com',
+  ],
+  'style' => 'primary',
+  'color' => '#0000ff',
+];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
