@@ -25,35 +25,11 @@ if (!is_null($events['events'])) {
   'type' => 'bubble',
   'body' => [
     'type' => 'box',
-    'layout' => 'vertical',
-    'spacing' => 'md',
+    'layout' => 'horizontal',
     'contents' => [
       0 => [
-        'type' => 'button',
-        'style' => 'primary',
-        'action' => [
-          'type' => 'uri',
-          'label' => 'Primary style button',
-          'uri' => 'https://developers.line.biz',
-        ],
-      ],
-      1 => [
-        'type' => 'button',
-        'style' => 'secondary',
-        'action' => [
-          'type' => 'uri',
-          'label' => 'Secondary style button',
-          'uri' => 'https://developers.line.biz',
-        ],
-      ],
-      2 => [
-        'type' => 'button',
-        'style' => 'link',
-        'action' => [
-          'type' => 'uri',
-          'label' => 'Link style button',
-          'uri' => 'https://developers.line.biz',
-        ],
+        'type' => 'text',
+        'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
     ],
   ],
