@@ -13,7 +13,7 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
     // Loop through each event
     
-      $xx.=$events['events']
+      $xx.=$events['events'];
     foreach ($events['events'] as $event) {
 
         
