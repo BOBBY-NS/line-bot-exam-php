@@ -30,18 +30,42 @@ if (!is_null($events['events'])) {
     'body' => 
     array (
       'type' => 'box',
-      'layout' => 'horizontal',
+      'layout' => 'vertical',
+      'spacing' => 'md',
       'contents' => 
       array (
         0 => 
         array (
-          'type' => 'text',
-          'text' => 'Hello,',
+          'type' => 'button',
+          'style' => 'primary',
+          'action' => 
+          array (
+            'type' => 'uri',
+            'label' => 'Primary style button',
+            'uri' => 'https://example.com',
+          ),
         ),
         1 => 
         array (
-          'type' => 'text',
-          'text' => 'World!',
+          'type' => 'button',
+          'style' => 'secondary',
+          'action' => 
+          array (
+            'type' => 'uri',
+            'label' => 'Secondary style button',
+            'uri' => 'https://example.com',
+          ),
+        ),
+        2 => 
+        array (
+          'type' => 'button',
+          'style' => 'link',
+          'action' => 
+          array (
+            'type' => 'uri',
+            'label' => 'Link style button',
+            'uri' => 'https://example.com',
+          ),
         ),
       ),
     ),
