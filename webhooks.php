@@ -43,7 +43,8 @@ if (!is_null($events['events'])) {
                         'contents' => [
                             0 => [
                                 'type' => 'text',
-                                'text' => 'คลิ๊กปุ่มเพื่อรับการแจ้งเตือน'
+                                'text' => 'คลิ๊กปุ่มเพื่อรับการแจ้งเตือน',
+                                'align' => 'center'
                             ],
                             1 => [
                                 'type' => 'button',
@@ -62,7 +63,7 @@ if (!is_null($events['events'])) {
                         'contents' => [
                             0 => [
                                 'type' => 'text',
-                                'text' => 'BOBBY Nakhon Sawan'
+                                'text' => 'BOBBY Nakhon Sawan',
                                 'align' => 'center'
                             ]
                         ]
