@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
             // Build message to reply back
             $messages = [
                 'type' => 'text',
-                'text' => "คลิ๊กลิงค์เพื่อรับการแจ้งเตือน\n" . $url
+                'text' => "คลิ๊กลิงค์เพื่อรับการแจ้งเตือน (ใช้ Internet ภายใน)\n" . $url
             ];
 
             // Make a POST Request to Messaging API to reply to sender
