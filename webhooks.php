@@ -42,13 +42,10 @@ if (!is_null($events['events'])) {
                         'spacing' => 'md',
                         'contents' => [
                             0 => [
-                                'type' => 'separator',
-                            ],
-                            1 => [
                                 'type' => 'text',
                                 'text' => 'คลิ๊กปุ่มเพื่อรับการแจ้งเตือน'
                             ],
-                            2 => [
+                            1 => [
                                 'type' => 'button',
                                 'style' => 'primary',
                                 'action' => [
