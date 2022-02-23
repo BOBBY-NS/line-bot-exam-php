@@ -28,6 +28,7 @@ if (!is_null($events['events'])) {
 				'layout' => 'vertical',
 				'spacing' => 'md',
 				'contents' =>  array(
+				    0 =>
 				    array(
 					'type' => 'button',
 					'style' => 'primary',
