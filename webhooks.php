@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
                         'contents' => [
                             0 => [
                                 'type' => 'text',
-                                'text' => 'คลิ๊กปุ่มเพื่อรับการแจ้งเตือนจาก BOBBY Care'
+                                'text' => 'คลิ๊กรับการแจ้งเตือนจาก BOBBY Care'
                             ]
                         ]
                     ],
