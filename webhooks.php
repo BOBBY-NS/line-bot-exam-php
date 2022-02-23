@@ -22,43 +22,42 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = array(
-    'type' => 'bubble',
-    'body' => array(
-        'type' => 'box',
-        'layout' => 'vertical',
-        'spacing' => 'md',
-        'contents' =>  array(
-            0 =>
-            array(
-                'type' => 'button',
-                'style' => 'primary',
-                'action' => array(
-                    'type' => 'uri',
-                    'label' => 'Primary style button',
-                    'uri' => 'https=>//developers.line.me'
-                )
-            ),
-            array(
-                'type' => 'button',
-                'style' => 'secondary',
-                'action' => array(
-                    'type' => 'uri',
-                    'label' => 'Secondary style button',
-                    'uri' => 'https=>//developers.line.me'
-                )
-            ),
-            array(
-                'type' => 'button',
-                'style' => 'link',
-                'action' => array(
-                    'type' => 'uri',
-                    'label' => 'Link style button',
-                    'uri' => 'https=>//developers.line.me'
-                )
-            )
-        )
-    )
-);
+			    'type' => 'bubble',
+			    'body' => array(
+				'type' => 'box',
+				'layout' => 'vertical',
+				'spacing' => 'md',
+				'contents' =>  array(
+				    array(
+					'type' => 'button',
+					'style' => 'primary',
+					'action' => array(
+					    'type' => 'uri',
+					    'label' => 'Primary style button',
+					    'uri' => 'https://developers.line.me'
+					)
+				    ),
+				    array(
+					'type' => 'button',
+					'style' => 'secondary',
+					'action' => array(
+					    'type' => 'uri',
+					    'label' => 'Secondary style button',
+					    'uri' => 'https://developers.line.me'
+					)
+				    ),
+				    array(
+					'type' => 'button',
+					'style' => 'link',
+					'action' => array(
+					    'type' => 'uri',
+					    'label' => 'Link style button',
+					    'uri' => 'https://developers.line.me'
+					)
+				    )
+				)
+			    )
+			);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
