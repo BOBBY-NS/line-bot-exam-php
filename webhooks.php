@@ -63,6 +63,7 @@ if (!is_null($events['events'])) {
                             0 => [
                                 'type' => 'text',
                                 'text' => 'BOBBY Nakhon Sawan'
+                                'align' => 'center'
                             ]
                         ]
                     ]
