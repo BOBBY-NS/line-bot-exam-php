@@ -21,19 +21,22 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [
+			$messages = array (
   'type' => 'bubble',
-  'body' => [
+  'body' => 
+  array (
     'type' => 'box',
     'layout' => 'horizontal',
-    'contents' => [
-      0 => [
+    'contents' => 
+    array (
+      0 => 
+      array (
         'type' => 'text',
         'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      ],
-    ],
-  ],
-];
+      ),
+    ),
+  ),
+);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
