@@ -58,6 +58,16 @@ if (!is_null($events['events'])) {
                                 ]
                             ]
                         ]
+                    ],
+                    'footer' => [
+                        'type' => 'box',
+                        'layout' => 'vertical',
+                        'contents' => [
+                            0 => [
+                                'type' => 'text',
+                                'text' => 'BOBBY Nakhon Sawan'
+                            ]
+                        ]
                     ]
                 ]
             ];
