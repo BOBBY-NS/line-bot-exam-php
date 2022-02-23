@@ -21,42 +21,37 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = 	array(
-				   'type' => 'imagemap',
-				   'baseUrl' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a',
-				   'altText' => 'this is an imagemap',
-				   'baseSize' => 
-				 array(
-				     'width' => 1040,
-				     'height' => 1040,
-				  ),
-				  'actions' => 
-				  array (
-				    0 => 
-				    array(
-				       'type' => 'uri',
-				       'linkUri' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a',
-				       'area' => 
-				      array(
-					 'x' => 0,
-					 'y' => 586,
-					 'width' => 520,
-					 'height' => 454,
-				      ),
-				    ),   
-				    array(
-				       'type' => 'message',
-				       'text' => 'hello',
-				       'area' => 
-				     array(
-					 'x' => 520,
-					 'y' => 586,
-					 'width' => 520,
-					 'height' => 454,
-				      )
-				    )
-				  )
-				);
+			$messages = array(
+					  "type"=> "template",
+					  "altText"=> "This is a buttons template",
+					  "template"=> array(
+					      "type"=> "buttons",
+					      "thumbnailImageUrl"=> "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a#",
+					      "imageAspectRatio"=> "rectangle",
+					      "imageSize"=> "cover",
+					      "imageBackgroundColor"=> "#FFFFFF",
+					      "title"=> "Menu",
+					      "text"=> "Please select",
+					      "defaultAction"=> array(
+						  "type"=> "uri",
+						  "label"=> "View detail",
+						  "uri"=> "http=>//example.com/page/123"
+					      ),
+					      "actions"=> array (
+									    0 =>
+						  array(
+						    "type"=> "postback",
+						    "label"=> "Buy",
+						    "data"=> "action=buy&itemid=123"
+						  ),
+						  array(
+						    "type"=> "uri",
+						    "label"=> "View detail",
+						    "uri"=> "http=>//example.com/page/123"
+						  )
+					      )
+					  )
+					);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
