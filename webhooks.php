@@ -65,6 +65,8 @@ if (!is_null($events['events'])) {
                                 'type' => 'text',
                                 'text' => 'BOBBY Nakhon Sawan',
                                 'align' => 'center'
+                                'size' => 'xs',
+                                'color' => '#6c757d'
                             ]
                         ]
                     ]
