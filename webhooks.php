@@ -14,64 +14,17 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 	    // Reply only when message sent is in 'text' format
-	    if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+	    if ($event['type'] == 'message' && $event['message']['type'] == 'sticker') {
             // Get text sent
-            $url = 'http://172.29.226.11/NS/Support/BobbyCare/AddPushID?emID=' . $event['message']['text'] . '&pushID=' . $event['source']['userId'];
+            $url = 'https://tinyurl.com/3p7cs5rh?pushID=' . $event['source']['userId'];
             // Get replyToken
             $replyToken = $event['replyToken'];
 
             // Build message to reply back
-            $messages = [
-                'type' => 'flex',
-                'altText' => 'This is a Flex Message',
-                'contents' => [
-                    'type' => 'bubble',
-                    'header' => [
-                        'type' => 'box',
-                        'layout' => 'vertical',
-                        'contents' => [
-                            0 => [
-                                'type' => 'text',
-                                'text' => 'BOBBY Care'
-                            ]
-                        ]
-                    ],
-                    'body' => [
-                        'type' => 'box',
-                        'layout' => 'vertical',
-                        'spacing' => 'md',
-                        'contents' => [
-                            0 => [
-                                'type' => 'text',
-                                'text' => 'iii',
-                                'align' => 'center'
-                            ],
-                            1 => [
-                                'type' => 'button',
-                                'style' => 'primary',
-                                'action' => [
-                                    'type' => 'uri',
-                                    'label' => 'รับการแจ้งเตือน',
-                                    'uri' => $url
-                                ]
-                            ]
-                        ]
-                    ],
-                    'footer' => [
-                        'type' => 'box',
-                        'layout' => 'vertical',
-                        'contents' => [
-                            0 => [
-                                'type' => 'text',
-                                'text' => 'BOBBY (DC Nakhon Sawan)',
-                                'align' => 'center',
-                                'size' => 'xs',
-                                'color' => '#6c757d'
-                            ]
-                        ]
-                    ]
-                ]
-            ];
+	    $messages = [
+		'type' => 'text',
+		'text' => $url
+	    ];
 
             // Make a POST Request to Messaging API to reply to sender
             $url = 'https://api.line.me/v2/bot/message/reply';
