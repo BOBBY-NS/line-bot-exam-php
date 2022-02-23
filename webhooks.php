@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 				    0 => 
 				    array(
 				       'type' => 'uri',
-				       'linkUri' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a',
+				       'linkUri' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a#',
 				       'area' => 
 				      array(
 					 'x' => 0,
