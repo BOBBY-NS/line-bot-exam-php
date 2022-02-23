@@ -25,6 +25,11 @@ if (!is_null($events['events'])) {
 				   'type' => 'imagemap',
 				   'baseUrl' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a#',
 				   'altText' => 'this is an imagemap',
+				   'baseSize' => 
+				 array(
+				     'height' => 240,
+				     'width' => 240,
+				  ),
 				   'actions' => 
 				  array (
 				    0 => 
