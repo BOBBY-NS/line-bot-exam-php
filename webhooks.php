@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
                         'contents' => [
                             0 => [
                                 'type' => 'text',
-                                'text' => 'คลิ๊กรับการแจ้งเตือนจาก BOBBY Care'
+                                'text' => 'BOBBY Care'
                             ]
                         ]
                     ],
@@ -42,6 +42,13 @@ if (!is_null($events['events'])) {
                         'spacing' => 'md',
                         'contents' => [
                             0 => [
+                                'type' => 'separator',
+                            ],
+                            1 => [
+                                'type' => 'text',
+                                'text' => 'คลิ๊กปุ่มเพื่อรับการแจ้งเตือน'
+                            ],
+                            2 => [
                                 'type' => 'button',
                                 'style' => 'primary',
                                 'action' => [
