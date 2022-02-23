@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 				    0 => 
 				    array(
 				       'type' => 'uri',
-				       'linkUri' => 'https://example.com/',
+				       'linkUri' => 'https://bobbyns.com/dashboard/assets/img/logo-xl.png',
 				       'area' => 
 				      array(
 					 'x' => 0,
