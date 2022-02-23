@@ -13,8 +13,8 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
-		// Reply only when message sent is in 'text' format
-		if ($event['type'] == 'message') {
+	    // Reply only when message sent is in 'text' format
+	    if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
             // Get text sent
             $url = 'http://172.29.226.11/NS/Support/BobbyCare/AddPushID?emID=' . $event['message']['text'] . '&pushID=' . $event['source']['userId'];
             // Get replyToken
