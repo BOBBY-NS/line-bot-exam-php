@@ -22,17 +22,27 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = array (
-  'type' => 'bubble',
-  'body' => 
+  'type' => 'flex',
+  'altText' => 'This is a Flex Message',
+  'contents' => 
   array (
-    'type' => 'box',
-    'layout' => 'horizontal',
-    'contents' => 
+    'type' => 'bubble',
+    'body' => 
     array (
-      0 => 
+      'type' => 'box',
+      'layout' => 'horizontal',
+      'contents' => 
       array (
-        'type' => 'text',
-        'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        0 => 
+        array (
+          'type' => 'text',
+          'text' => 'Hello,',
+        ),
+        1 => 
+        array (
+          'type' => 'text',
+          'text' => 'World!',
+        ),
       ),
     ),
   ),
