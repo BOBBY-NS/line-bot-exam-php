@@ -23,14 +23,14 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = 	array(
 				   'type' => 'imagemap',
-				   'baseUrl' => 'https://bobbyns.com/dashboard/assets/img/logo-xl.png#',
+				   'baseUrl' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a#',
 				   'altText' => 'this is an imagemap',
 				   'actions' => 
 				  array (
 				    0 => 
 				    array(
 				       'type' => 'uri',
-				       'linkUri' => 'https://bobbyns.com/dashboard/assets/img/logo-xl.png',
+				       'linkUri' => 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a',
 				       'area' => 
 				      array(
 					 'x' => 0,
