@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = 	array(
 				   'type' => 'imagemap',
-				   'baseUrl' => 'https://bobbyns.com/dashboard/assets/img/logo-xl.png',
+				   'baseUrl' => 'https://bobbyns.com/dashboard/assets/img/logo-xl.png#',
 				   'altText' => 'this is an imagemap',
 				   'baseSize' => 
 				 array(
