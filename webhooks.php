@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
                                 'style' => 'primary',
                                 'action' => [
                                     'type' => 'uri',
-                                    'label' => 'Primary style button',
+                                    'label' => 'รับการแจ้งเตือน',
                                     'uri' => $url
                                 ]
                             ]
