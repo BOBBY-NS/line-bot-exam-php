@@ -22,36 +22,36 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = array(
-					  "type"=> "template",
-					  "altText"=> "This is a buttons template",
-					  "template"=> array(
-					      "type"=> "buttons",
-					      "thumbnailImageUrl"=> "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a#",
-					      "imageAspectRatio"=> "rectangle",
-					      "imageSize"=> "cover",
-					      "imageBackgroundColor"=> "#FFFFFF",
-					      "title"=> "Menu",
-					      "text"=> "Please select",
-					      "defaultAction"=> array(
-						  "type"=> "uri",
-						  "label"=> "View detail",
-						  "uri"=> "http=>//example.com/page/123"
+					  'type'=> 'template',
+					  'altText'=> 'This is a buttons template',
+					  'template'=> array(
+					      'type'=> 'buttons',
+					      'thumbnailImageUrl'=> 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a#',
+					      'imageAspectRatio'=> 'rectangle',
+					      'imageSize'=> 'cover',
+					      'imageBackgroundColor'=> '#FFFFFF',
+					      'title'=> 'Menu',
+					      'text'=> 'Please select',
+					      'defaultAction'=> array(
+						  'type'=> 'uri',
+						  'label'=> 'View detail',
+						  'uri'=> 'http=>//example.com/page/123'
 					      ),
-					      "actions"=> array (
+					      'actions'=> array (
 									    0 =>
 						  array(
-						    "type"=> "postback",
-						    "label"=> "Buy",
-						    "data"=> "action=buy&itemid=123"
+						    'type'=> 'postback',
+						    'label'=> 'Buy',
+						    'data'=> 'action=buy&itemid=123'
 						  ),
 						  array(
-						    "type"=> "uri",
-						    "label"=> "View detail",
-						    "uri"=> "http=>//example.com/page/123"
+						    'type'=> 'uri',
+						    'label'=> 'View detail',
+						    'uri'=> 'http=>//example.com/page/123'
 						  )
 					      )
 					  )
-					);
+				   );
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
