@@ -26,6 +26,16 @@ if (!is_null($events['events'])) {
                 'altText' => 'This is a Flex Message',
                 'contents' => [
                     'type' => 'bubble',
+                    'header' => [
+                        'type' => 'box',
+                        'layout' => 'vertical',
+                        'contents' => [
+                            0 => [
+                                'type' => 'text',
+                                'text' => 'คลิ๊กปุ่มเพื่อรับการแจ้งเตือนจาก BOBBY Care'
+                            ]
+                        ]
+                    ],
                     'body' => [
                         'type' => 'box',
                         'layout' => 'vertical',
